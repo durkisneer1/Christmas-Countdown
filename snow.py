@@ -8,7 +8,7 @@ class Snowflake(pg.sprite.Sprite):
     def __init__(self, groups: pg.sprite.Group):
         super().__init__(groups)
 
-        self.surf = pg.Surface((10, 10)).convert()
+        self.surf = pg.Surface((10, 10))
         self.surf.fill("white")
 
         self.direction = randint(0, 1)
